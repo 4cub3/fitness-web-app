@@ -66,7 +66,7 @@ const ContacttUs: React.FC = () => {
               target="_blank"
               onSubmit={submitHandler}
               method="POST"
-              action="https://formsubmit.co/doyin97@gmail.com"
+              action="https://formsubmit.co/b12fc76f3b2c1d57f5cbe82b170d6301"
             >
               <input
                 type="text"
