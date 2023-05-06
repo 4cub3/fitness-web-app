@@ -35,12 +35,14 @@ const HomepageContext: React.FC<HomePageContextProps> = ({ children }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [setIsTopOfPage]);
 
+  const handleSelectedPage = (a:SelectedPage = SelectedPage.home) =>{
+    setSelectedPage(a)
+  }
+
   const values = {
     selectedPage,
     isTopOfPage,
-    setSelectedPage: (a: SelectedPage) => {
-      setSelectedPage(a);
-    },
+    setSelectedPage: handleSelectedPage,
   };
 
   return (

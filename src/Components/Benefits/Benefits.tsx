@@ -20,8 +20,9 @@ const Benefits: React.FC = () => {
   return (
     <section id="benefits" className="mx-auto min-h-full w-5/6 py-20 ">
       <motion.div
-        onViewportEnter={() =>
+        onViewportEnter={() =>{
           ctxHomePage.setSelectedPage(SelectedPage.benefits)
+        }
         }
       >
         <motion.article
